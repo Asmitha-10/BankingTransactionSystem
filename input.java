@@ -74,6 +74,7 @@ public class input {
         }
         while (!bankingTransactionManagementSystem.hm.containsKey(AcNo)) {
             System.out.println("Account Doesn't Exist !!!!\nPlease Enter a Valid Account Number ...");
+            System.out.print("Enter Account Number     : ");
             AcNo = o.sc.nextInt();
         }
         int Deposit;
@@ -89,7 +90,7 @@ public class input {
             }
         }
         while (Deposit < 0) {
-            System.out.print("Please Enter Deposit Amount greater than Zero....");
+            System.out.println("Please Enter Deposit Amount greater than Zero....");
             System.out.print("Enter Deposit Amount     : ");
             Deposit = o.sc.nextInt();
         }
@@ -115,6 +116,7 @@ public class input {
 
         while (!bankingTransactionManagementSystem.hm.containsKey(ANo)) {
             System.out.println("Account Doesn't Exist !!!!\nPlease Enter a Valid Account Number ...");
+            System.out.print("Enter Account Number     : ");
             ANo = o.sc.nextInt();
         }
         int Withdrawl;
